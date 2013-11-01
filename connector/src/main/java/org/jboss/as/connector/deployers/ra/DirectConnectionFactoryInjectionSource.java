@@ -84,9 +84,7 @@ public class DirectConnectionFactoryInjectionSource extends InjectionSource {
         final DeploymentUnit deploymentUnit = phaseContext.getDeploymentUnit();
         final Module module = deploymentUnit.getAttachment(org.jboss.as.server.deployment.Attachments.MODULE);
         String raId = resourceAdapter;
-        if (resourceAdapter.endsWith(".rar")) {
-            raId = resourceAdapter.substring(0, resourceAdapter.indexOf(".rar"));
-        }
+
         if (resourceAdapter.startsWith("#")) {
             raId = deploymentUnit.getParent().getName() + raId;
         }

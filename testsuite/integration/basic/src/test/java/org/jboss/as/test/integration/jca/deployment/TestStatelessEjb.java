@@ -39,7 +39,7 @@ import javax.resource.ConnectionFactoryDefinitions;
     @ConnectionFactoryDefinition(
         interfaceName = "org.jboss.as.test.integration.jca.rar.MultipleConnectionFactory1",
         name = "java:comp/rardeployment/CompCF",
-        resourceAdapter = "eis"),
+        resourceAdapter = "eis.rar"),
     @ConnectionFactoryDefinition(
         interfaceName = "org.jboss.as.test.integration.jca.rar.MultipleConnectionFactory1",
         name = "java:module/rardeployment/ModuleCF",
@@ -47,7 +47,7 @@ import javax.resource.ConnectionFactoryDefinitions;
     @ConnectionFactoryDefinition(
         interfaceName = "org.jboss.as.test.integration.jca.rar.MultipleConnectionFactory1",
         name = "java:global/rardeployment/GlobalCF",
-        resourceAdapter = "eis")
+        resourceAdapter = "eis.rar")
 })
 @Stateless
 public class TestStatelessEjb implements ITestStatelessEjb {

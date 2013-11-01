@@ -82,7 +82,7 @@
                    </entries>
                    <?HA-REMOTE-CONNECTION-FACTORY?>
                </connection-factory>
-               <pooled-connection-factory name="hornetq-ra">
+               <pooled-connection-factory name="hornetq-ra.rar">
                    <transaction mode="xa"/>
                    <connectors>
                        <connector-ref connector-name="in-vm"/>

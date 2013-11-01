@@ -39,7 +39,7 @@ import javax.resource.ConnectionFactoryDefinitions;
     @AdministeredObjectDefinition(
         className = "org.jboss.as.test.integration.jca.rar.MultipleAdminObject1Impl",
         name = "java:comp/rardeployment/CompAdmin",
-        resourceAdapter = "#inside-eis"),
+        resourceAdapter = "#inside-eis.rar"),
     @AdministeredObjectDefinition(
         className = "org.jboss.as.test.integration.jca.rar.MultipleAdminObject1Impl",
         name = "java:module/rardeployment/ModuleAdmin",
@@ -47,7 +47,7 @@ import javax.resource.ConnectionFactoryDefinitions;
     @AdministeredObjectDefinition(
         className = "org.jboss.as.test.integration.jca.rar.MultipleAdminObject1Impl",
         name = "java:global/rardeployment/GlobalAdmin",
-        resourceAdapter = "#inside-eis")
+        resourceAdapter = "#inside-eis.rar")
 })
 @Stateless
 public class TestStatelessEjbAO implements ITestStatelessEjbAO {
